@@ -1,16 +1,16 @@
 MODEL NAME
-----------
+
 Eukaryotic Symbiont – Prokaryotic Host Symbiosis Simulation
 
 1. Purpose of the Model
-----------------------
+
 This simulation models the conceptual evolution of a eukaryotic symbiont
 within a prokaryotic host. The primary focus is on the development of
 a specialized organelle called "nitroplast" and energy dynamics
 arising from interactions between cellular components and environmental factors.
 
 2. Key Concepts and Assumptions
--------------------------------
+
 - The symbiont genome is represented as a binary array; gene states
   can mutate randomly.
 - Key organelles (mitochondria, chloroplast, ribosome, nitroplast)
@@ -24,7 +24,7 @@ arising from interactions between cellular components and environmental factors.
   not actual biochemical calculations.
 
 3. Model Logic
---------------
+
 The simulation iteratively performs the following per generation:
 1. Environment fluctuations affect nutrients, light, and other factors.
 2. The prokaryotic host genome undergoes random mutations.
@@ -38,7 +38,7 @@ The simulation iteratively performs the following per generation:
 7. Energy levels and generation count are recorded for analysis.
 
 4. Code Implementation
-----------------------
+
 - **Classes**:
   - `CellularComponent`: Represents organelles with efficiency and mutation logic.
   - `EukaryoticSymbiont`: Contains genome and organelles; handles mutation, metabolism, and nitroplast evolution.
@@ -53,7 +53,7 @@ The simulation iteratively performs the following per generation:
   - Energy levels across generations for each simulation
 
 5. Results and Evaluation
--------------------------
+
 | Aspect                                 | Observation                                                |
 |----------------------------------------|------------------------------------------------------------|
 | Nitroplast Development Time             | Variable per simulation; tracked over 50 runs              |
@@ -62,14 +62,14 @@ The simulation iteratively performs the following per generation:
 | Symbiont Survival                        | Dependent on energy production exceeding consumption       |
 
 6. Interpretation of Results
------------------------------
+
 - Simulations demonstrate stochastic nature of organelle evolution.
 - Energy dynamics show trade-offs between organelle efficiency and survival.
 - Faster nitroplast development occurs when environment favors high energy production.
 - Results provide conceptual insights into symbiosis and organelle evolution, though abstracted.
 
 7. Limitations
---------------
+
 - The model is highly simplified and does not represent real biological processes.
 - Energy calculations are heuristic and not chemically accurate.
 - Mutation rates, thresholds, and efficiencies are arbitrary and parameterized for demonstration.
